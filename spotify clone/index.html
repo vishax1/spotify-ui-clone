@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify UI Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-circle"></div>
+        <span>My<span>Spotify</span></span>
+      </div>
+
+      <nav class="nav-main">
+        <a href="#" class="nav-item active">🏠 Home</a>
+        <a href="#" class="nav-item">🔍 Search</a>
+        <a href="#" class="nav-item">📚 Your Library</a>
+      </nav>
+
+      <div class="nav-section-title">PLAYLISTS</div>
+      <nav class="nav-playlists">
+        <a href="#" class="nav-item-small">✨ Discover Weekly</a>
+        <a href="#" class="nav-item-small">💪 Workout Mix</a>
+        <a href="#" class="nav-item-small">🧘 Chill Vibes</a>
+        <a href="#" class="nav-item-small">🚗 Road Trip</a>
+        <a href="#" class="nav-item-small">🔥 Top Hits</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-item-small">⚙️ Settings</a>
+        <a href="#" class="nav-item-small">📥 Install App</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="circle-btn">&lt;</button>
+          <button class="circle-btn">&gt;</button>
+        </div>
+        <div class="topbar-right">
+          <div class="user-pill">
+            <div class="avatar">N</div>
+            <span class="username">Nishant</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero / Current Playlist -->
+      <section class="hero">
+        <div class="hero-cover"></div>
+        <div class="hero-info">
+          <p class="hero-label">PLAYLIST</p>
+          <h1 class="hero-title">Chill Vibes</h1>
+          <p class="hero-desc">
+            Slow beats, soft vocals, and late-night energy. Perfect for focusing, relaxing, or coding.
+          </p>
+          <p class="hero-meta">
+            Made for <span class="highlight">You</span> • 48 songs • ~2 hr 35 min
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary">Play</button>
+            <button class="btn btn-outline">Follow</button>
+            <span class="hero-likes">❤️ 12,354 likes</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Playlist Table -->
+      <section class="track-list">
+        <div class="track-header">
+          <span>#</span>
+          <span>Title</span>
+          <span>Album</span>
+          <span>🕒</span>
+        </div>
+
+        <div class="track-row playing">
+          <span>1</span>
+          <span class="track-title">
+            <span class="title">Midnight Lo-Fi</span>
+            <span class="subtitle">DJ Pixel</span>
+          </span>
+          <span class="album">Late Night Coding</span>
+          <span>3:12</span>
+        </div>
+
+        <div class="track-row">
+          <span>2</span>
+          <span class="track-title">
+            <span class="title">Rainy Window</span>
+            <span class="subtitle">Soft Waves</span>
+          </span>
+          <span class="album">Cloudy Days</span>
+          <span>2:58</span>
+        </div>
+
+        <div class="track-row">
+          <span>3</span>
+          <span class="track-title">
+            <span class="title">Neon Nights</span>
+            <span class="subtitle">Skyline</span>
+          </span>
+          <span class="album">City Lights</span>
+          <span>3:45</span>
+        </div>
+
+        <div class="track-row">
+          <span>4</span>
+          <span class="track-title">
+            <span class="title">Soft Focus</span>
+            <span class="subtitle">Lofti</span>
+          </span>
+          <span class="album">Deep Work</span>
+          <span>4:01</span>
+        </div>
+      </section>
+
+      <!-- Recommended / Cards -->
+      <section class="cards-section">
+        <h2>Made for You</h2>
+        <div class="card-row">
+          <article class="card">
+            <div class="card-cover"></div>
+            <h3>Daily Mix 1</h3>
+            <p>Lo-fi, chillhop, soft beats.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-cover"></div>
+            <h3>Focus Flow</h3>
+            <p>Instrumental tracks to keep you in the zone.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-cover"></div>
+            <h3>Weekend Vibes</h3>
+            <p>Upbeat songs for your Saturday mood.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Bottom Player -->
+  <footer class="player">
+    <div class="player-left">
+      <div class="player-cover"></div>
+      <div class="player-track">
+        <span class="player-title">Midnight Lo-Fi</span>
+        <span class="player-artist">DJ Pixel</span>
+      </div>
+    </div>
+
+    <div class="player-center">
+      <div class="player-controls">
+        <span class="ctrl-btn">⏮</span>
+        <span class="ctrl-btn ctrl-main">▶</span>
+        <span class="ctrl-btn">⏭</span>
+      </div>
+      <div class="player-timeline">
+        <span class="time">1:21</span>
+        <div class="bar">
+          <div class="bar-progress"></div>
+        </div>
+        <span class="time">3:12</span>
+      </div>
+    </div>
+
+    <div class="player-right">
+      <div class="equalizer">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="volume">
+        🔊
+        <div class="volume-bar">
+          <div class="volume-level"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
